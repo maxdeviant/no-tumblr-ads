@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "No Tumblr Ads",
+    "description": "Hide those annoying ads on your Tumblr dashboard.",
+    "version": "1.0.0",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.tumblr.com/*"
+            ],
+            "js": [
+
+            ],
+            "css": [
+                "src/css/hide-ads.css"
+            ]
+        }
+    ]
+}
